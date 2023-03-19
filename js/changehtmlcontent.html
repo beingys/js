@@ -30,8 +30,16 @@
     </style>
 </head>
 <body>
-    <div class="del">Delhi is <span class="cap">Capital</span></div>
-    <div class="mumb">Mumbai</div>
+    <div class="del" id="del">Delhi is <span class="cap">Capital</span></div>
+    <div class="mumb" id="mumbai1">Mumbai</div>
     <div class="bang">Bengaluru</div>
+    <button id="delhi">Delhi</button>
+    <button id="mumb">Mumbai</button>
+
+    <script>
+        document.getElementById('delhi').onclick=function() {
+            document.getElementById('del').innerHTML = '<p>Delhi is the capital of India</p>'
+        }
+    </script>
 </body>
 </html>
