@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in Javascript</title>
+</head>
+<body>
+    OBJECTS
+    <script>
+        var car ={
+            name : "Alto",
+            make : "Maruti",
+            YOM  : "2022",
+            Color: "White",
+            Engine: "800CC",
+        };
+        window.console.log(car);
+        delete car.Engine;// this will delete the particular item of object
+        window.console.log(car);
+        window.console.log(car.Color); // this will print the particular targeted item of the object
+        var my2ndcar = car;
+        window.console.log(my2ndcar);
+        my2ndcar.YOM = "2020";
+        window.console.log(my2ndcar);
+        window.console.log(car);
+
+    </script>
+</body>
+</html>
