@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in js</title>
+</head>
+<body>
+    <p id="para">This is Javascript.</p>
+    <script>
+        var groceryList = ["Sugar","Rice","Tea"];
+        // var groceryList = new Array("Pulses", "Milk", "Butter");
+        // document.getElementById("para").innerHTML+= "<br>" + groceryList;
+        showResult(groceryList);
+        // document.getElementById("para").innerHTML+= "<br>" + groceryList[0];
+        showResult(groceryList[0]);
+        // document.getElementById("para").innerHTML+= "<br>" + groceryList[2];
+        showResult(groceryList[2]);
+
+        function showResult(x){
+            document.getElementById('para').innerHTML+= "<br>" + x;
+
+
+        }
+    </script>
+
+</body>
+</html>
