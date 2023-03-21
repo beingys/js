@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>if and switch statement</title>
 </head>
+
 <body>
     <p>This is Javascript</p>
     <p>Enter Marks Here: <input type="number" id="result"><button onclick="checkResult()">Submit Result</button></p>
+    <p>Enter Season: <input  id="season"><button onclick="showSeason()">Show Season</button></p>
     <script>
         function checkResult() {
-         
-        var marks =document.getElementById('result').value;
 
-if (marks>=60) {
-    alert("You Passed the exam");
-}
-else{
-    alert("failed try next time");
-}   
+            var marks = document.getElementById('result').value;
+
+            if (marks >= 60) {
+                alert("You Passed the exam");
+            }
+            else {
+                alert("failed try next time");
+            }
+        }
+
+        function showSeason() {
+            var x = document.getElementById("season").value;
+            switch (x) {
+                case summer:
+                    alert("Its Summer Season");
+                    
+                    break;
+            
+                    case winter:
+                    alert("Its Winter Season");
+                    
+                    break;
+                    case spring:
+                    alert("Its Spring Season");
+                    
+                    break;
+                     default:
+                    alert("This value is not correct");
+                    
+                    break;
+            }
         }
     </script>
 </body>
+
 </html>
