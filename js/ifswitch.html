@@ -8,15 +8,18 @@
 </head>
 <body>
     <p>This is Javascript</p>
-
+    <p>Enter Marks Here: <input type="text" id="result"><button onclick="checkResult()">Submit Result</button></p>
     <script>
-        var marks =50;
+        function checkResult() {
+         
+        var marks =document.getElementById('result').value;
 
-        if (marks>=60) {
-            alert("You Passed the exam");
-        }
-        else{
-            alert("failed try next time");
+if (marks>=60) {
+    alert("You Passed the exam");
+}
+else{
+    alert("failed try next time");
+}   
         }
     </script>
 </body>
