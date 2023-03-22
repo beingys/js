@@ -10,11 +10,16 @@
     <p id="para">This is Javascript.</p>
 
     <script>
-        document.getElementById('para').innerHTML += "<br>" + 1;
-        document.getElementById('para').innerHTML+= "<br>" + 2;
-        document.getElementById('para').innerHTML+= "<br>" + 3;
-        document.getElementById('para').innerHTML+= "<br>" + 4;
-        document.getElementById('para').innerHTML+= "<br>" + 5;
+        // document.getElementById('para').innerHTML += "<br>" + 1;
+        // document.getElementById('para').innerHTML+= "<br>" + 2;
+        // document.getElementById('para').innerHTML+= "<br>" + 3;
+        // document.getElementById('para').innerHTML+= "<br>" + 4;
+        // document.getElementById('para').innerHTML+= "<br>" + 5;
+
+        for (let i = 0; i < 50; i++) {
+            document.getElementById('para').innerHTML+= "<br>" + i;
+            
+        }
     </script>
 </body>
 </html>
